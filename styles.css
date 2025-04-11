@@ -1,0 +1,93 @@
+body {
+	background: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.postcard {
+	background: white;
+	width: 500px;
+	height: auto;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.postcard-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.postcard-header h1 {
+	font-size: 24px;
+	margin: 0;
+}
+
+.postcard-header img {
+	width: 60px;
+	height: 60px;
+	margin-top: 10px;
+}
+
+.postcard-body {
+	display: flex; /* Align paragraphs and form side by side */
+	justify-content: space-between; /* Space between left and right sections */
+	align-items: stretch; /* Ensure both take the same height */
+	margin-top: 20px;
+}
+
+.body-left {
+	width: 60%; /* Left side for paragraphs */
+	display: flex;
+	flex-direction: column; /* Stack paragraphs vertically */
+	justify-content: flex-start; /* Align paragraphs to the top */
+}
+
+.body-left p {
+	margin: 2px 0; /* Reduced margin between paragraphs */
+	font-size: 14px;
+	text-align: justify;
+}
+
+.body-right {
+	width: 35%; /* Right side for form */
+	display: flex;
+	flex-direction: column; /* Stack form elements vertically */
+	justify-content: center; /* Vertically align the form in the center */
+	align-items: center; /* Horizontally center the form */
+}
+
+.postcard-footer {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 20px;
+}
+
+.postcard-footer form {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center; /* Center the form content */
+}
+
+.postcard-footer button {
+	background: gray;
+	color: black;
+	border: none;
+	padding: 10px 20px; /* Increased padding for a better button look */
+	font-size: 14px;
+	cursor: pointer;
+	width: 100%; /* Make button take up full width of form container */
+	max-width: 200px; /* Max width to prevent the button from being too wide */
+	margin: 10px auto; /* Center the button and add margin */
+}
+
+.postcard-footer button:hover {
+	background: darkgray;
+}
